@@ -149,10 +149,66 @@
       <router-link to="/home/creditLoan">
         <button type="button" class="btn btn-outline-success">返回</button>
       </router-link>
-      <button type="button" class="btn btn-outline-success">服務據點</button>
+      <button type="button" class="btn btn-outline-success" v-on:click="click" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">服務據點</button>
 
-      <button type="button" class="btn btn-success" v-on:click="click"> 立即申請</button>
+      <button type="button" class="btn btn-success" v-on:click="click" data-bs-toggle="modal"
+        data-bs-target="#exampleModal2"> 立即申請</button>
 
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">服務據點</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：國際金融業務分行
+                  <li>電話：(02)21738888</li>
+                  <li>地址：台北市松山區長安東路二段225號5樓</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：營業部
+                  <li>電話：(02)21738888</li>
+                  <li>地址：台北市松山區長安東路二段225號</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：台北分行
+                  <li>電話：(02)27724277</li>
+                  <li>地址：台北市松山區復興北路55號</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">立即申請</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            恭喜你申請成功
+          </div>
+
+        </div>
+      </div>
     </div>
 
 
@@ -231,5 +287,11 @@ export default {
   margin-right: 10%;
   display: flex;
   justify-content: space-around;
+}
+
+.service_location {
+  border: solid 1px;
+  margin-bottom: 20px;
+  padding-top: 10px
 }
 </style>

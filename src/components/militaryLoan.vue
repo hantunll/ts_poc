@@ -14,8 +14,8 @@
     <div>
       <div style="display:flex">
         <div class="vl"></div>
-        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military"
-          aria-expanded="false" aria-controls="military" v-on:click="click">
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military" aria-expanded="false"
+          aria-controls="military" v-on:click="click">
           貸款對象
         </div>
       </div>
@@ -27,8 +27,8 @@
     <div>
       <div style="display:flex">
         <div class="vl"></div>
-        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military2"
-          aria-expanded="false" aria-controls="military2" v-on:click="click">
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military2" aria-expanded="false"
+          aria-controls="military2" v-on:click="click">
           貸款額度
         </div>
       </div>
@@ -40,8 +40,8 @@
     <div>
       <div style="display:flex">
         <div class="vl"></div>
-        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military3"
-          aria-expanded="false" aria-controls="military3" v-on:click="click">
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military3" aria-expanded="false"
+          aria-controls="military3" v-on:click="click">
           貸款利率
         </div>
       </div>
@@ -53,8 +53,8 @@
     <div>
       <div style="display:flex">
         <div class="vl"></div>
-        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military4"
-          aria-expanded="false" aria-controls="military4" v-on:click="click">
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military4" aria-expanded="false"
+          aria-controls="military4" v-on:click="click">
           貸款期限
         </div>
       </div>
@@ -68,8 +68,8 @@
     <div>
       <div style="display:flex">
         <div class="vl"></div>
-        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military5"
-          aria-expanded="false" aria-controls="military5" v-on:click="click">
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military5" aria-expanded="false"
+          aria-controls="military5" v-on:click="click">
           保證
         </div>
       </div>
@@ -81,8 +81,8 @@
     <div>
       <div style="display:flex">
         <div class="vl"></div>
-        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military6"
-          aria-expanded="false" aria-controls="military6" v-on:click="click">
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#military6" aria-expanded="false"
+          aria-controls="military6" v-on:click="click">
           常見問題
         </div>
       </div>
@@ -127,9 +127,9 @@
             aria-expanded="false" aria-controls="military9" v-on:click="click">
             Q 向貴行申請貸款需要提供保證人擔保嗎？
           </button>
-          <ul class="collapse content" id="military9">
-            借款人和保證人的身分證正本、第2證件(駕照或健保卡)及印章。
-          </ul>
+        <ul class="collapse content" id="military9">
+          借款人和保證人的身分證正本、第2證件(駕照或健保卡)及印章。
+        </ul>
         </p>
 
         <p>
@@ -137,21 +137,77 @@
             aria-expanded="false" aria-controls="military10" v-on:click="click">
             Q 什麼是貸款指標利率？
           </button>
-          <ul class="collapse content" id="military10">
-            貸款指標利率是指向銀行貸款時貸款利率的指標，貸款利率是由機動的「指標利率」加上固定的「利率加碼」所構成，貸款每月應繳納的利息金額會隨著指標利率變動而有所調整。
-          </ul>
+        <ul class="collapse content" id="military10">
+          貸款指標利率是指向銀行貸款時貸款利率的指標，貸款利率是由機動的「指標利率」加上固定的「利率加碼」所構成，貸款每月應繳納的利息金額會隨著指標利率變動而有所調整。
+        </ul>
         </p>
       </div>
     </div>
 
     <div class="two_button">
       <router-link to="/home/creditLoan">
-          <button type="button" class="btn btn-outline-success">返回</button>
+        <button type="button" class="btn btn-outline-success">返回</button>
       </router-link>
-      <button type="button" class="btn btn-outline-success">服務據點</button>
+      <button type="button" class="btn btn-outline-success" v-on:click="click" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">服務據點</button>
 
-      <button type="button" class="btn btn-success" v-on:click="click"> 立即申請</button>
+      <button type="button" class="btn btn-success" v-on:click="click" data-bs-toggle="modal"
+        data-bs-target="#exampleModal2"> 立即申請</button>
 
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">服務據點</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：國際金融業務分行
+                  <li>電話：(02)21738888</li>
+                  <li>地址：台北市松山區長安東路二段225號5樓</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：營業部
+                  <li>電話：(02)21738888</li>
+                  <li>地址：台北市松山區長安東路二段225號</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：台北分行
+                  <li>電話：(02)27724277</li>
+                  <li>地址：台北市松山區復興北路55號</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">立即申請</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            恭喜你申請成功
+          </div>
+
+        </div>
+      </div>
     </div>
 
 
@@ -171,19 +227,19 @@ import axios from 'axios';
 export default {
 
   methods: {
-      click: function(){
-          axios({
-              method: 'post',
-              url: "https://ts6-scsb.apps.openshift.jvsf.p2.openshiftapps.com/militaryCreditLoan/update",
-              data: {
-                  email: sessionStorage.getItem('account'),
-              }
-          })
-          .then((res) => {
-              console.log(res.data);
-              console.log("click home loan success");
-          })
-      },
+    click: function () {
+      axios({
+        method: 'post',
+        url: "https://ts6-scsb.apps.openshift.jvsf.p2.openshiftapps.com/militaryCreditLoan/update",
+        data: {
+          email: sessionStorage.getItem('account'),
+        }
+      })
+        .then((res) => {
+          console.log(res.data);
+          console.log("click home loan success");
+        })
+    },
   },
 }
 </script>
@@ -237,5 +293,11 @@ export default {
   margin-right: 10%;
   display: flex;
   justify-content: space-around;
+}
+
+.service_location {
+  border: solid 1px;
+  margin-bottom: 20px;
+  padding-top: 10px
 }
 </style>

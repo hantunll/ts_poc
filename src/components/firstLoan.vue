@@ -175,7 +175,32 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-
+            <div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：國際金融業務分行
+                  <li>電話：(02)21738888</li>
+                  <li>地址：台北市松山區長安東路二段225號5樓</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：營業部
+                  <li>電話：(02)21738888</li>
+                  <li>地址：台北市松山區長安東路二段225號</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+              <div class="service_location">
+                <ul>
+                  分行名稱：台北分行
+                  <li>電話：(02)27724277</li>
+                  <li>地址：台北市松山區復興北路55號</li>
+                  <li>營業時間：週一~週五 09:00~15:30</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -276,5 +301,12 @@ export default {
   margin-right: 10%;
   display: flex;
   justify-content: space-around;
+}
+
+
+.service_location {
+  border: solid 1px;
+  margin-bottom: 20px;
+  padding-top: 10px
 }
 </style>
