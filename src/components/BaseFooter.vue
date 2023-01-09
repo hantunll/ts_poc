@@ -5,17 +5,14 @@
       <div class="container">
         <div class="footer__row">
           <div class="footer__getcall">
-            <!-- <img src="img/tcb.png" alt="" width="60" height="60"/> -->
             <div class="footer__getcall-info">
-              <h3 class="footer__getcall-h3">合庫核心轉型 &amp; 數位轉型</h3>
-              <span class="gooter__getcall-span">Talent Show</span>
+                <h3 class="footer__getcall-h3" style="font-size:1.2rem; font-family:serif;color:darkgreen;">Talent Show Group 6</h3>
+                <h3 class="footer__getcall-h3" style="font-size:1rem; font-family:serif;"></h3>
+                <h3 class="footer__getcall-h3" style="font-size:1rem; font-family:serif;">IBM-Consulting</h3>
+              <h3 class="footer__getcall-h3" style="font-size:1rem; font-family:serif;">合庫核心轉型 &amp; 數位轉型</h3>
+              
+             
             </div>
-          </div>
-          <div class="footer__info">
-            <span class="footer__info-span">Email : info@ibm.com</span>
-            <span class="footer__info-span margin--right-10">
-              Tel : 0905750608</span
-            >
           </div>
         </div>
       </div>
@@ -23,22 +20,18 @@
     <div class="footer__main">
       <div class="container">
         <div class="footer__links">
-          <a href="" class="footer__link">關於</a>
-          <a href="" class="footer__link">聯絡我們</a>
-          <a href="" class="footer__link">本行公告</a>
-          <a href="" class="footer__link">訊息專區</a>
-          <a href="" class="footer__link">留言板</a>
-          <a href="" class="footer__link">服務據點</a>
+          <a href="" class="footer__link" style="font-size:0.8rem; font-family:serif; color:darkgreen;">關於</a>
+          <a href="" class="footer__link" style="font-size:0.8rem; font-family:serif; color:darkgreen;">聯絡我們</a>
+          <a href="" class="footer__link" style="font-size:0.8rem; font-family:serif; color:darkgreen;">公告</a>
+          <a href="" class="footer__link" style="font-size:0.8rem; font-family:serif; color:darkgreen;">留言</a>
+          <a href="" class="footer__link" style="font-size:0.8rem; font-family:serif; color:darkgreen;">服務據點</a>
         </div>
         <div class="footer__hr"></div>
         <div class="footer__about">
-          <!-- <p class="footer__txt">
-            IBM Consulting
-          </p> -->
         </div>
       </div>
       <div class="footer__team">
-        design with &#x02665; by
+        design &#x02665; by
         <a href="" class="footer__copy">Talent Show Group 6 </a>
         © 2023
       </div>
@@ -779,7 +772,8 @@ ul li {
 .footer__top {
     margin-top: 60px;
     padding: 25px 0;
-    background: #edf2f3;
+    background: hsl(154, 38%, 84%);
+    border:1px green solid;
 }
 
 .footer__row {
