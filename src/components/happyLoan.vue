@@ -149,12 +149,43 @@
 
     <div class="two_button">
       <router-link to="/home/houseLoan">
-          <button type="button" class="btn btn-outline-success">返回</button>
+        <button type="button" class="btn btn-outline-success">返回</button>
       </router-link>
-      <button type="button" class="btn btn-outline-success">服務據點</button>
+      <button type="button" class="btn btn-outline-success" v-on:click="click" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">服務據點</button>
 
-      <button type="button" class="btn btn-success" v-on:click="click"> 立即申請</button>
-      
+      <button type="button" class="btn btn-success" v-on:click="click" data-bs-toggle="modal"
+        data-bs-target="#exampleModal2"> 立即申請</button>
+
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">服務據點</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">立即申請</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            恭喜你申請成功
+          </div>
+
+        </div>
+      </div>
     </div>
 
   
