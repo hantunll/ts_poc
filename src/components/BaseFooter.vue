@@ -5,19 +5,15 @@
       <div class="container">
         <div class="footer__row">
           <div class="footer__getcall">
-            <!-- <img src="img/tcb.png" alt="" width="60" height="60"/> -->
             <div class="footer__getcall-info">
                 <h3 class="footer__getcall-h3" style="font-size:1.2rem; font-family:serif;color:darkgreen;">Talent Show Group 6</h3>
+                <h3 class="footer__getcall-h3" style="font-size:1rem; font-family:serif;"></h3>
+                <h3 class="footer__getcall-h3" style="font-size:1rem; font-family:serif;">IBM-Consulting</h3>
               <h3 class="footer__getcall-h3" style="font-size:1rem; font-family:serif;">合庫核心轉型 &amp; 數位轉型</h3>
+              
              
             </div>
           </div>
-          <!-- <div class="footer__info" style="font-size:1rem; font-family:serif;">
-            <span class="footer__info-span">Email : info@ibm.com</span>
-            <span class="footer__info-span margin--right-10">
-              Tel : 0905750608</span
-            >
-          </div> -->
         </div>
       </div>
     </div>
@@ -32,9 +28,6 @@
         </div>
         <div class="footer__hr"></div>
         <div class="footer__about">
-          <!-- <p class="footer__txt">
-            IBM Consulting
-          </p> -->
         </div>
       </div>
       <div class="footer__team">
