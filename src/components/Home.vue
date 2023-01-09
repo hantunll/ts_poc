@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@hantunll 
-hantunll
-/
-ts_poc
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-ts_poc/src/components/Home.vue
-
-Jackson TH Ko 0109
-Latest commit c704ce8 1 hour ago
- History
- 0 contributors
-2208 lines (1881 sloc)  40 KB
-
 
 
 <template>
@@ -40,112 +10,117 @@ Latest commit c704ce8 1 hour ago
                     <div class="card-body" style="font-family:serif;">
                         <!-- <p class="card-text">軍公教信用貸款</p> -->
 
-
                         <div class="d-flex justify-content-between align-items-center">
                             <div v-on:click="clickHL">
                                 <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img"
                                     style="cursor: pointer; " />
                             </div>
                         </div>
-                        <!-- </div> -->
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card mb-4 box-shadow"
-                        style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
-                        <div class="card-body" style="font-family:serif;">
-                            <p class="card-text" style="color:black ;font-size:1.2rem;">美好生活幸福成家</p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">首次購屋貸款
-                            </p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="text-align: left;">提供您購屋資金需求，助您幸福成家</p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">一般房屋貸款
-                            </p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="text-align: left;">利率超優惠，減輕您的負擔</p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">幸福滿貸貸款
-                            </p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="text-align: left;">提供還本寬限期，輕鬆還款</p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="text-align: left;"></p>
+                    <div class="col-sm-6">
+                        <div class="card mb-4 box-shadow"
+                            style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                            <div class="card-body" style="font-family:serif;">
+                                <p class="card-text" style="color:black ;font-size:1.2rem;">美好生活幸福成家</p>
+                                <p class="card-text" style="text-align: left;"></p>
+                                <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">
+                                    首次購屋貸款
+                                </p>
+                                <p class="card-text" style="text-align: left;"></p>
+                                <p class="card-text" style="text-align: left;">提供您購屋資金需求，助您幸福成家</p>
+                                <p class="card-text" style="text-align: left;"></p>
+                                <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">
+                                    一般房屋貸款
+                                </p>
+                                <p class="card-text" style="text-align: left;"></p>
+                                <p class="card-text" style="text-align: left;">利率超優惠，減輕您的負擔</p>
+                                <p class="card-text" style="text-align: left;"></p>
+                                <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">
+                                    幸福滿貸貸款
+                                </p>
+                                <p class="card-text" style="text-align: left;"></p>
+                                <p class="card-text" style="text-align: left;">提供還本寬限期，輕鬆還款</p>
+                                <p class="card-text" style="text-align: left;"></p>
+                                <p class="card-text" style="text-align: left;"></p>
 
 
 
-                            <div class="d-flex justify-content-between align-items-center">
-                            </div>
-                            <div class="d-flex justify-content-end align-items-center ">
-                                <div class="btn-group">
-                                    <div v-on:click="clickHL">
-                                        <button type="button" class="btn btn-sm btn-outline-success"
-                                            style="font-family:serif;">了解更多</button>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="d-flex justify-content-end align-items-center ">
+                                    <div class="btn-group">
+                                        <div v-on:click="clickHL">
+                                            <button type="button" class="btn btn-sm btn-outline-success"
+                                                style="font-family:serif;">了解更多</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <!-- <div class="card mb-4 box-shadow" style="background-color:white" > -->
-                    <div class="card-body" style="font-family:serif;">
-                        <!-- <p class="card-text">優質優利信用貸款</p> -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div v-on:click="clickCL">
-                                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img"
-                                    style="cursor: pointer; " />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div> -->
-                </div>
-                <div class="col-sm-6">
-                    <div class="card mb-4 box-shadow"
-                        style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <!-- <div class="card mb-4 box-shadow" style="background-color:white" > -->
                         <div class="card-body" style="font-family:serif;">
-                            <p class="card-text" style="color:black ;font-size:1.2rem;">順手e貸</p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">軍公教信用貸款
-                            </p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">醫護人員信用貸款
-                            </p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="text-align: left;">利率開辦費最優惠，省時省力免等貸</p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">優質優利信用貸款
-                            </p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">簡易小額信用貸款
-                            </p>
-                            <p class="card-text" style="text-align: left;">貸您實現夢想</p>
-                            <p class="card-text" style="text-align: left;"></p>
-                            <p class="card-text" style="text-align: left;"></p>
-
-
+                            <!-- <p class="card-text">優質優利信用貸款</p> -->
 
                             <div class="d-flex justify-content-between align-items-center">
+                                <div v-on:click="clickCL">
+                                    <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img"
+                                        style="cursor: pointer; " />
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-end align-items-center ">
-                                <div class="btn-group">
-                                    <div v-on:click="clickCL">
-                                        <button type="button" class="btn btn-sm btn-outline-success"
-                                            style="font-family:serif;">了解更多</button>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card mb-4 box-shadow"
+                                style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                                <div class="card-body" style="font-family:serif;">
+                                    <p class="card-text" style="color:black ;font-size:1.2rem;">順手e貸</p>
+                                    <p class="card-text" style="text-align: left;"></p>
+                                    <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">
+                                        軍公教信用貸款
+                                    </p>
+                                    <p class="card-text" style="text-align: left;"></p>
+                                    <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">
+                                        醫護人員信用貸款
+                                    </p>
+                                    <p class="card-text" style="text-align: left;"></p>
+                                    <p class="card-text" style="text-align: left;">利率開辦費最優惠，省時省力免等貸</p>
+                                    <p class="card-text" style="text-align: left;"></p>
+                                    <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">
+                                        優質優利信用貸款
+                                    </p>
+                                    <p class="card-text" style="text-align: left;"></p>
+                                    <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">
+                                        簡易小額信用貸款
+                                    </p>
+                                    <p class="card-text" style="text-align: left;">貸您實現夢想</p>
+                                    <p class="card-text" style="text-align: left;"></p>
+                                    <p class="card-text" style="text-align: left;"></p>
+
+
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                    </div>
+                                    <div class="d-flex justify-content-end align-items-center ">
+                                        <div class="btn-group">
+                                            <div v-on:click="clickCL">
+                                                <button type="button" class="btn btn-sm btn-outline-success"
+                                                    style="font-family:serif;">了解更多</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-
         </div>
     </div>
-
 </template>
 
 <script>
