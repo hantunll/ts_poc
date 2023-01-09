@@ -6,18 +6,35 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'signup',
-    component: () => import('../components/Signup.vue'),
-  },
-  {
-    path: '/login',
     name: 'login',
     component: () => import('../components/Login.vue'),
   },
   {
-    path: '/forgot-password',
-    name: 'forgot-password',
-    component: () => import('../components/ForgotPassword.vue'),
+    path: "/home",
+    name: "Home",
+    component: () => import('../components/Home.vue'),
+    // children: [
+    //   {
+    //     path: "/houseLoan",
+    //     name: "HouseLoan",
+    //     component: () => import('../components/HouseLoan.vue'),
+    //   },
+    //   {
+    //     path: "/creditLoan",
+    //     name: "CreditLoan",
+    //     component: () => import('../components/CreditLoan.vue'),
+    //   },
+    // ]
+  },
+  {
+    path: "/home/houseLoan",
+    name: "HouseLoan",
+    component: () => import('../components/HouseLoan.vue'),
+  },
+  {
+    path: "/home/creditLoan",
+    name: "CreditLoan",
+    component: () => import('../components/CreditLoan.vue'),
   },
 ]
 
