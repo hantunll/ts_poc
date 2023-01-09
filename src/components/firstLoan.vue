@@ -1,0 +1,240 @@
+<!-- <style src="@/assets/css/tcb_style.css"></style> -->
+<template>
+
+  <div class="body">
+    <div class="title">
+      <div>
+        首次購屋貸款
+      </div>
+      <div>
+        <img :src="require(`@/assets/img/homeloan.png`)" alt="" width="70x" />
+      </div>
+    </div>
+    <div>
+      <div style="display:flex">
+        <div class="vl"></div>
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample" v-on:click="click">
+          貸款對象
+        </div>
+      </div>
+      <div class="collapse content" id="collapseExample">
+        <!-- <div> -->
+        屬無自用住宅購屋貸款者。
+        <!-- </div> -->
+      </div>
+    </div>
+    <div>
+      <div style="display:flex">
+        <div class="vl"></div>
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+          aria-expanded="false" aria-controls="collapseExample2" v-on:click="click">
+          貸款額度
+        </div>
+      </div>
+      <div class="collapse content" id="collapseExample2">
+        依本行房屋擔保貸款鑑估規定辦理，最高可貸8成。
+
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex">
+        <div class="vl"></div>
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+          aria-expanded="false" aria-controls="collapseExample3" v-on:click="click">
+          貸款利率
+        </div>
+      </div>
+      <div class="collapse content" id="collapseExample3">
+        優惠利率依貸款對象或擔保品座落地區差別訂價：
+        <li>公教人員1.81%起（依本行現行指標利率浮動計息）。</li>
+        <li>1.81% ~ 1.971%起（依本行現行指標利率浮動計息）。</li>
+
+
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex">
+        <div class="vl"></div>
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4"
+          aria-expanded="false" aria-controls="collapseExample4" v-on:click="click">
+          貸款期限
+        </div>
+      </div>
+      <div class="collapse content" id="collapseExample4">
+        最長40年。
+
+      </div>
+    </div>
+
+
+    <div>
+      <div style="display:flex">
+        <div class="vl"></div>
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5"
+          aria-expanded="false" aria-controls="collapseExample5" v-on:click="click">
+          擔保品
+        </div>
+      </div>
+      <div class="collapse content" id="collapseExample5">
+        提供本人所有合法登記之建物及其基地。
+
+      </div>
+
+    </div>
+    <div>
+      <div style="display:flex">
+        <div class="vl"></div>
+        <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6"
+          aria-expanded="false" aria-controls="collapseExample6" v-on:click="click">
+          常見問題
+        </div>
+      </div>
+      <div class="collapse content" id="collapseExample6">
+        <p>
+          <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7"
+            aria-expanded="false" aria-controls="collapseExample7" v-on:click="click">
+            Q 向貴行申請貸款，應準備那些基本文件？
+          </button>
+        <ol class="collapse content" id="collapseExample7">
+
+          <li>請提供買賣契約影本、國民身分證與第二證件(例如健保卡、駕照執照、護照等)、戶籍謄本或戶口名簿(正本供本行查驗)、印章。</li>
+          <li>財資力證明：借款人最近一年度綜合所得稅各類所得資料清單或所得扣繳憑單影本全部、薪資轉帳存摺、在職證明、土地及建物所有權狀影本等。</li>
+          <li>最近一個月國稅局財產歸戶清單。</li>
+          <li>
+            若借款人於全體銀行授信金額(含本筆)達新台幣2,000萬元，須檢附最近年度綜合所得稅結算申報書影本或綜合所得稅結算申報試算稅額通知書影本加附繳稅取款委託書或申報繳款書或扣繳憑單影本，亦得以稅捐機關核發之綜合所得稅稅額證明書或各類所得歸戶清單代替。
+          </li>
+
+        </ol>
+        </p>
+
+        <p>
+          <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8"
+            aria-expanded="false" aria-controls="collapseExample8" v-on:click="click">
+            Q 請問對保時需要攜帶那些資料？
+          </button>
+        <ul class="collapse content" id="collapseExample8">
+
+          借款人和保證人的身分證正本、第2證件(駕照或健保卡)及印章。
+        </ul>
+        </p>
+
+
+        <p>
+          <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9"
+            aria-expanded="false" aria-controls="collapseExample9" v-on:click="click">
+            Q 向貴行申請貸款需要提供保證人擔保嗎？
+          </button>
+        <ul class="collapse content" id="collapseExample9">
+
+          本行會依據借款人個人信用狀況、財資力狀況及還款能力為依據個案審核後，再據以判斷是否需徵取保證人。
+
+        </ul>
+        </p>
+
+        <p>
+          <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10"
+            aria-expanded="false" aria-controls="collapseExample10" v-on:click="click">
+            Q 什麼是貸款指標利率？
+          </button>
+        <ul class="collapse content" id="collapseExample10">
+
+          貸款指標利率是指向銀行貸款時貸款利率的指標，貸款利率是由機動的「指標利率」加上固定的「利率加碼」所構成，貸款每月應繳納的利息金額會隨著指標利率變動而有所調整。
+        </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="two_button">
+      <router-link to="/home/houseLoan">
+        <button type="button" class="btn btn-outline-success">返回</button>
+      </router-link>
+      <button type="button" class="btn btn-outline-success">服務據點</button>
+
+      <button type="button" class="btn btn-success" v-on:click="click"> 立即申請</button>
+
+    </div>
+
+
+  </div>
+
+
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+
+  methods: {
+    click: function () {
+      axios({
+        method: 'post',
+        url: "https://ts6-scsb.apps.openshift.jvsf.p2.openshiftapps.com/firstHomeLoan/update",
+        data: {
+          email: sessionStorage.getItem('account'),
+        }
+      })
+        .then((res) => {
+          console.log(res.data);
+          console.log("click home loan success");
+        })
+        .catch(error => {
+          console.log(error.response);
+        });
+    },
+  },
+}
+</script>
+
+<style>
+.vl {
+  border-left: 6px solid green;
+  height: 20px;
+  padding-right: 5px;
+}
+
+.title {
+  color: green;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body {
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+
+}
+
+.content {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.question {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.two_button {
+  padding-top: 20px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+</style>

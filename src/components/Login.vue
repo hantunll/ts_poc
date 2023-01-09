@@ -1,6 +1,6 @@
 <template>
-  <div class="vue-tempalte">
-    <div class="vertical-center">
+  <div class="container">
+    <div class="header__top">
       <div class="inner-block">
         <h3>Sign In</h3>
         <div class="form-group">
@@ -26,47 +26,47 @@
 import router from '@/router';
 import axios from 'axios';
 
-  export default {
-      data() {
-          return {
-              msg:"",
-          }
-      },
-      methods: {
-          handleClick: function(){
-              axios({
-                  method: 'post',
-                  url: "https://ts6-scsb.apps.openshift.jvsf.p2.openshiftapps.com/user/login",
-                  data: {
-                      email: this.msg,
-                  }
-              })
-              .then((res) => {
-                  console.log(res.data);
-                  if (res.data.apiResponseStatus.message == "Success") {
-                    sessionStorage.setItem('account', res.data.returnData.email);
-                    this.$router.push('/home')
-                    // this.login === true;
-                  } else {
-                    console.log('False ya')
-                    alert("Please re-enter your IBM email");
-                  }
-                  // console.log("Current login status" + this.login);
-              })
-              .catch(error => {
-                console.log(error.response);
-                alert("Please re-enter your IBM email");
-                location.reload();
-              });
-              console.log(this.msg);
-          },
-      },
-      mounted () {
-        if (sessionStorage.getItem('account')) {
-          alert("Already sign in!");
-          this.$router.push('/home');
+export default {
+  data() {
+    return {
+      msg: "",
+    }
+  },
+  methods: {
+    handleClick: function () {
+      axios({
+        method: 'post',
+        url: "https://ts6-scsb.apps.openshift.jvsf.p2.openshiftapps.com/user/login",
+        data: {
+          email: this.msg,
         }
-        console.log('mounted');
-      },
-  }
+      })
+        .then((res) => {
+          console.log(res.data);
+          if (res.data.apiResponseStatus.message == "Success") {
+            sessionStorage.setItem('account', res.data.returnData.email);
+            this.$router.push('/home')
+            // this.login === true;
+          } else {
+            console.log('False ya')
+            alert("Please re-enter your IBM email");
+          }
+          // console.log("Current login status" + this.login);
+        })
+        .catch(error => {
+          console.log(error.response);
+          alert("Please re-enter your IBM email");
+          location.reload();
+        });
+      console.log(this.msg);
+    },
+  },
+  mounted() {
+    if (sessionStorage.getItem('account')) {
+      alert("Already sign in!");
+      this.$router.push('/home');
+    }
+    console.log('mounted');
+  },
+}
 </script>

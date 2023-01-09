@@ -1,27 +1,11 @@
 <template>
-  <div class="vue-tempalte">
+  <div id="app">
     <!-- Navigation header -->
-    <nav
-      class="navbar shadow bg-white rounded justify-content-between flex-nowrap flex-row fixed-top"
-    >
-      <div class="container">
-        <router-link to="/home">
-          <a
-            class="navbar-brand float-left"
-          >
-            合作金庫
-          </a>
-        </router-link>
-        <!-- <ul class="nav navbar-nav flex-row float-right">
-          <li class="nav-item">
-            <router-link class="nav-link pr-3" to="/login">Sign in</router-link>
-          </li>
-        </ul> -->
-      </div>
-    </nav>
-
+    <BaseHeader/>
     <!-- Main -->
-    <router-view />
+    <div class="test_body">
+      <router-view />
+    </div>
     <!-- footer -->
     <BaseFooter/>
   </div>
@@ -31,14 +15,29 @@
 <script>
 // import BaseHeader from './components/BaseHeader'
 import BaseFooter from './components/BaseFooter'
+import BaseHeader from './components/BaseHeader'
+
 import router from './router';
 export default {
 
   components: {
-    // BaseHeader,
+    BaseHeader,
     BaseFooter,
     router
 },
 
 }
 </script>
+
+
+<style>
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 98vh;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>

@@ -1,81 +1,121 @@
+
 <template>
-<div class="container">
-    <div class="header__top">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <div class="card mb-4 box-shadow ">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="header__top">
+            <div class="row mb-2">
+
                 <div class="col-sm-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                        <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="card mb-4 box-shadow"
+                        style="background-color:hsl(154, 38%, 84%);border:1px green solid; ">
+                        <div class="card-body" style="font-family:serif;">
+                            <p class="card-text" style="color:darkgreen;font-size:1.2rem;">軍公教信用貸款</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img class="card-img-top" img :src="require(`@/assets/img/creditloan/soldier.png`)">
                             </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
+                            <div class="btn-group">
+                                <router-link to="/home/creditLoan/militaryCredit">
+                                    <button type="button" class="btn btn-sm btn-outline-success"
+                                        style="font-family:serif;">了解更多</button>
+                                </router-link>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                    </div>
-                    </div>
-                </div>
                 </div>
                 <div class="col-sm-6">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                    <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="card mb-4 box-shadow"
+                        style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                        <div class="card-body" style="font-family:serif;">
+                            <p class="card-text" style="color:darkgreen;font-size:1.2rem;">醫護人員信用貸款</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img class="card-img-top" img :src="require(`@/assets/img/creditloan/medical.png`)">
+                            </div>
+                            <div class="btn-group">
+                                <router-link to="/home/creditLoan/medicalCredit">
+                                    <button type="button" class="btn btn-sm btn-outline-success"
+                                        style="font-family:serif;">了解更多</button>
+                                </router-link>
+                            </div>
                         </div>
-                        <small class="text-muted">9 mins</small>
-                    </div>
                     </div>
                 </div>
             </div>
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <div class="card mb-4 box-shadow"
+                        style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                        <div class="card-body" style="font-family:serif;">
+                            <p class="card-text" style="color:darkgreen;font-size:1.2rem;">優質優利信用貸款</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img class="card-img-top" img :src="require(`@/assets/img/creditloan/discount.png`)">
+                            </div>
+                            <div class="btn-group">
+                                <router-link to="/home/creditLoan/primeCredit">
+                                    <button type="button" class="btn btn-sm btn-outline-success"
+                                        style="font-family:serif;">了解更多</button>
+                                </router-link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card mb-4 box-shadow"
+                        style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                        <div class="card-body" style="font-family:serif;">
+                            <p class="card-text" style="color:darkgreen;font-size:1.2rem;">簡易小額信用貸款</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img class="card-img-top" img :src="require(`@/assets/img/creditloan/easy.png`)">
+                            </div>
+                            <div class="btn-group">
+                                <router-link to="/home/creditLoan/smallCredit">
+                                    <button type="button" class="btn btn-sm btn-outline-success"
+                                        style="font-family:serif;">了解更多</button>
+                                </router-link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <router-link to="/home">
+                <button type="button" class="btn btn-success" style="font-family:serif;">返回</button>
+            </router-link>
         </div>
     </div>
-</div>
 
 </template>
 
 <style scoped>
+.card mb-4 box-shadow {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    /* border: 1px solid rgb(0, 255, 242); */
+    background: #46b1ef;
+    border-radius: 8px;
+
+}
+
+.picmain {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    /* border: 1px solid rgb(0, 255, 242); */
+    background: #46b1ef;
+    border-radius: 8px;
+}
+
+/* .picmain span {
+            position: absolute;
+            padding: 15px;
+            border-style: solid;
+            border-color: rgb(114, 243, 237);
+        } */
 html {
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     direction: ltr;
     display: -ms-flexbox;
     display: -webkit-box;
@@ -97,17 +137,22 @@ main {
     box-sizing: inherit;
 }
 
-*:before, *:after {
+*:before,
+*:after {
     box-sizing: inherit;
     font-family: fonticon;
     vertical-align: middle;
 }
 
-a, a:focus, a:visited, a:active {
+a,
+a:focus,
+a:visited,
+a:active {
     text-decoration: none;
 }
 
-a, span {
+a,
+span {
     display: inline-block;
 }
 
@@ -136,7 +181,8 @@ ul li {
     position: relative;
 }
 
-.header__shape-inner:before, .header__shape-inner:after {
+.header__shape-inner:before,
+.header__shape-inner:after {
     content: '';
     position: absolute;
     top: 0;
@@ -151,7 +197,7 @@ ul li {
 }
 
 .header__shape-inner:after {
-    background: #46b1ef;
+    background: #116e5a;
     height: 300px;
     right: -80px;
     transform: rotate(-23deg);
@@ -200,7 +246,7 @@ ul li {
 }
 
 .navbar__link--is-active {
-    color: #46b1ef;
+    color: hsl(154, 43%, 84%);
 }
 
 .navbar__item {
@@ -237,11 +283,13 @@ ul li {
     top: 9px;
 }
 
-.navbar__item--has-sub:hover > .navbar__subset {
+.navbar__item--has-sub:hover>.navbar__subset {
     display: block;
 }
 
-.header__basket-icon, .header__account-icon, .header__menu {
+.header__basket-icon,
+.header__account-icon,
+.header__menu {
     padding: 8px 14px 5px;
     border-radius: 3px;
     background: #f4f4f4;
@@ -522,6 +570,7 @@ ul li {
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }
@@ -532,7 +581,8 @@ ul li {
     height: 100%;
 }
 
-.slideshow__prev, .slideshow__next {
+.slideshow__prev,
+.slideshow__next {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -653,7 +703,8 @@ ul li {
     background: white;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     background-image: unset !important;
     margin: unset !important;
     width: unset !important;
@@ -670,7 +721,7 @@ ul li {
 .swiper-button-prev {
     left: unset !important;
     right: 30px !important;
-} 
+}
 
 .slider__content {
     min-height: 350px;
@@ -807,6 +858,7 @@ ul li {
 .margin--right-10 {
     margin-right: 10px;
 }
+
 .margin--bottom-10 {
     margin-bottom: 10px;
 }
@@ -993,7 +1045,7 @@ ul li {
     position: relative;
 }
 
-.ui-checkbox__input:checked ~ .ui-checkbox__mark {
+.ui-checkbox__input:checked~.ui-checkbox__mark {
     background: #46b1ef;
 }
 
@@ -1115,12 +1167,12 @@ ul li {
     right: 2px;
 }
 
-.ui-switcher__input:checked + .ui-switcher__slider {
+.ui-switcher__input:checked+.ui-switcher__slider {
     background: #46b1ef;
     border-color: #2893d6;
 }
 
-.ui-switcher__input:checked + .ui-switcher__slider span {
+.ui-switcher__input:checked+.ui-switcher__slider span {
     right: 21px;
 }
 
@@ -1246,7 +1298,8 @@ ul li {
     padding-left: 5px;
 }
 
-.gallery__prev, .gallery__next {
+.gallery__prev,
+.gallery__next {
     cursor: pointer;
     position: absolute;
     padding: 10px;
@@ -1263,7 +1316,8 @@ ul li {
 }
 
 .gallery__next {
-    left: 15px;;
+    left: 15px;
+    ;
 }
 
 .gallery__items {
@@ -1290,7 +1344,8 @@ ul li {
     width: 100%;
 }
 
-.gallery__item--is-acitve, .gallery__item:hover {
+.gallery__item--is-acitve,
+.gallery__item:hover {
     opacity: 1;
 
 }
@@ -1347,7 +1402,8 @@ ul li {
     font-size: 20px;
 }
 
-.rating__rate:hover::before, .rating__rate:hover ~ span:before {
+.rating__rate:hover::before,
+.rating__rate:hover~span:before {
     color: #ffa200;
     position: relative;
     z-index: 10;
@@ -1577,7 +1633,8 @@ select {
     color: #6c757d;
 }
 
-.btn--fav, .btn--compare {
+.btn--fav,
+.btn--compare {
     margin-left: 20px;
 }
 
@@ -1696,6 +1753,7 @@ select {
         opacity: 0;
         transform: rotateX(-90deg)
     }
+
     100% {
         opacity: 1;
         transform: rotateX(0deg)
@@ -1712,7 +1770,8 @@ select {
     line-height: 200%;
 }
 
-.tab__section--compare ul, .tab__section--compare ol {
+.tab__section--compare ul,
+.tab__section--compare ol {
     padding: 0 20px 0;
 }
 
@@ -1848,7 +1907,8 @@ select {
     font-size: 15px;
 }
 
-.comments__date, .btn--reply {
+.comments__date,
+.btn--reply {
     font-size: 12px;
 }
 
@@ -1957,7 +2017,8 @@ select {
     margin-top: 30px;
 }
 
-.cart__coupon, .cart__table {
+.cart__coupon,
+.cart__table {
     width: 100%;
     max-width: 50%;
     flex: 0 0 50%;
@@ -1998,7 +2059,8 @@ table {
     text-align: center;
 }
 
-table th, table td {
+table th,
+table td {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #f0f0f5;
@@ -2071,7 +2133,8 @@ table tbody tr:nth-child(2n+1) {
     color: #6c757d;
     margin-top: 15px;
 }
-.account__router{
+
+.account__router {
     color: #36b3fb;
 }
 </style>

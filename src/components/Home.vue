@@ -1,39 +1,121 @@
-<!-- <template>
-  <div>
-    <div>
-      <h1>CreditLoad</h1>
-      <div>
-        <button v-on:click="handleClick">test</button>
-      </div>
-    </div>
-  </div>
-</template> -->
-<style src="@/assets/css/tcb_style.css"></style>
+
+
 <template>
-<main class="main">
-<div class="container">
-    <div class="header__top">
-    <div class="loan">
-        <div>
-            <!-- <router-link to="/home/houseLoan">
-                <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img" />
-            </router-link> -->
-            <div v-on:click="clickHL">
-                <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img" style="cursor: pointer; " />
+    <div class="container">
+        <div class="header__top">
+            <div class="row mb-2">
+
+                <div class="col-sm-6">
+                    <!-- <div class="card mb-4 box-shadow"> -->
+                    <div class="card-body" style="font-family:serif;">
+                        <!-- <p class="card-text">軍公教信用貸款</p> -->
+
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div v-on:click="clickHL">
+                                <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img"
+                                    style="cursor: pointer; " />
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card mb-4 box-shadow"
+                        style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                        <div class="card-body" style="font-family:serif;">
+                            <p class="card-text" style="color:black ;font-size:1.2rem;">美好生活幸福成家</p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">首次購屋貸款
+                            </p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="text-align: left;">提供您購屋資金需求，助您幸福成家</p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">一般房屋貸款
+                            </p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="text-align: left;">利率超優惠，減輕您的負擔</p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">幸福滿貸貸款
+                            </p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="text-align: left;">提供還本寬限期，輕鬆還款</p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="text-align: left;"></p>
+
+
+
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center ">
+                                <div class="btn-group">
+                                    <div v-on:click="clickHL">
+                                        <button type="button" class="btn btn-sm btn-outline-success"
+                                            style="font-family:serif;">了解更多</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <!-- <router-link to="/home/creditLoan">
-                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img" />
-            </router-link> -->
-            <div v-on:click="clickCL">
-                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img" style="cursor: pointer; " />
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <!-- <div class="card mb-4 box-shadow" style="background-color:white" > -->
+                    <div class="card-body" style="font-family:serif;">
+                        <!-- <p class="card-text">優質優利信用貸款</p> -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div v-on:click="clickCL">
+                                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img"
+                                    style="cursor: pointer; " />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-sm-6">
+                    <div class="card mb-4 box-shadow"
+                        style="background-color:hsl(154, 38%, 84%);border:1px green solid;">
+                        <div class="card-body" style="font-family:serif;">
+                            <p class="card-text" style="color:black ;font-size:1.2rem;">順手e貸</p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">軍公教信用貸款
+                            </p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">醫護人員信用貸款
+                            </p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="text-align: left;">利率開辦費最優惠，省時省力免等貸</p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">優質優利信用貸款
+                            </p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="color:darkgreen ;font-size:1.3rem; text-align: left; ">簡易小額信用貸款
+                            </p>
+                            <p class="card-text" style="text-align: left;">貸您實現夢想</p>
+                            <p class="card-text" style="text-align: left;"></p>
+                            <p class="card-text" style="text-align: left;"></p>
+
+
+
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center ">
+                                <div class="btn-group">
+                                    <div v-on:click="clickCL">
+                                        <button type="button" class="btn btn-sm btn-outline-success"
+                                            style="font-family:serif;">了解更多</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
-    </div>
-</div>
-</main>
+
 </template>
 
 <script>
@@ -55,37 +137,53 @@ export default {
         //     this.$router.push('/home/houseLoan');
         //     console.log(email);
         // },
-        clickCL: function(){
+        clickCL: function () {
             var email = sessionStorage.getItem('account');
             this.$router.push('/home/creditLoan');
             console.log(email);
         },
 
-        clickHL: function(){
-            axios({
-                method: 'post',
-                url: "https://ts6-scsb.apps.openshift.jvsf.p2.openshiftapps.com/firstHomeLoan/update",
-                data: {
-                    email: sessionStorage.getItem('account'),
-                }
-            })
-            .then((res) => {
-                console.log(res.data);
-                console.log("click home loan success");
-                this.$router.push('/home/houseLoan');
-            })
+        clickHL: function () {
+            this.$router.push('/home/houseLoan');
         },
-        
+
     }
 }
 </script>
 
+
 <style scoped>
+.card mb-4 box-shadow {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    /* border: 1px solid rgb(0, 255, 242); */
+    background: #46b1ef;
+    border-radius: 8px;
+
+}
+
+.picmain {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    /* border: 1px solid rgb(0, 255, 242); */
+    background: #46b1ef;
+    border-radius: 8px;
+}
+
+/* .picmain span {
+            position: absolute;
+            padding: 15px;
+            border-style: solid;
+            border-color: rgb(114, 243, 237);
+        } */
 html {
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     direction: ltr;
     display: -ms-flexbox;
     display: -webkit-box;
@@ -107,17 +205,22 @@ main {
     box-sizing: inherit;
 }
 
-*:before, *:after {
+*:before,
+*:after {
     box-sizing: inherit;
     font-family: fonticon;
     vertical-align: middle;
 }
 
-a, a:focus, a:visited, a:active {
+a,
+a:focus,
+a:visited,
+a:active {
     text-decoration: none;
 }
 
-a, span {
+a,
+span {
     display: inline-block;
 }
 
@@ -146,7 +249,8 @@ ul li {
     position: relative;
 }
 
-.header__shape-inner:before, .header__shape-inner:after {
+.header__shape-inner:before,
+.header__shape-inner:after {
     content: '';
     position: absolute;
     top: 0;
@@ -161,7 +265,7 @@ ul li {
 }
 
 .header__shape-inner:after {
-    background: #46b1ef;
+    background: #116e5a;
     height: 300px;
     right: -80px;
     transform: rotate(-23deg);
@@ -210,7 +314,7 @@ ul li {
 }
 
 .navbar__link--is-active {
-    color: #46b1ef;
+    color: hsl(154, 43%, 84%);
 }
 
 .navbar__item {
@@ -247,11 +351,13 @@ ul li {
     top: 9px;
 }
 
-.navbar__item--has-sub:hover > .navbar__subset {
+.navbar__item--has-sub:hover>.navbar__subset {
     display: block;
 }
 
-.header__basket-icon, .header__account-icon, .header__menu {
+.header__basket-icon,
+.header__account-icon,
+.header__menu {
     padding: 8px 14px 5px;
     border-radius: 3px;
     background: #f4f4f4;
@@ -532,6 +638,7 @@ ul li {
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }
@@ -542,7 +649,8 @@ ul li {
     height: 100%;
 }
 
-.slideshow__prev, .slideshow__next {
+.slideshow__prev,
+.slideshow__next {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -663,7 +771,8 @@ ul li {
     background: white;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     background-image: unset !important;
     margin: unset !important;
     width: unset !important;
@@ -680,7 +789,7 @@ ul li {
 .swiper-button-prev {
     left: unset !important;
     right: 30px !important;
-} 
+}
 
 .slider__content {
     min-height: 350px;
@@ -817,6 +926,7 @@ ul li {
 .margin--right-10 {
     margin-right: 10px;
 }
+
 .margin--bottom-10 {
     margin-bottom: 10px;
 }
@@ -1003,7 +1113,7 @@ ul li {
     position: relative;
 }
 
-.ui-checkbox__input:checked ~ .ui-checkbox__mark {
+.ui-checkbox__input:checked~.ui-checkbox__mark {
     background: #46b1ef;
 }
 
@@ -1125,12 +1235,12 @@ ul li {
     right: 2px;
 }
 
-.ui-switcher__input:checked + .ui-switcher__slider {
+.ui-switcher__input:checked+.ui-switcher__slider {
     background: #46b1ef;
     border-color: #2893d6;
 }
 
-.ui-switcher__input:checked + .ui-switcher__slider span {
+.ui-switcher__input:checked+.ui-switcher__slider span {
     right: 21px;
 }
 
@@ -1256,7 +1366,8 @@ ul li {
     padding-left: 5px;
 }
 
-.gallery__prev, .gallery__next {
+.gallery__prev,
+.gallery__next {
     cursor: pointer;
     position: absolute;
     padding: 10px;
@@ -1273,7 +1384,8 @@ ul li {
 }
 
 .gallery__next {
-    left: 15px;;
+    left: 15px;
+    ;
 }
 
 .gallery__items {
@@ -1300,7 +1412,8 @@ ul li {
     width: 100%;
 }
 
-.gallery__item--is-acitve, .gallery__item:hover {
+.gallery__item--is-acitve,
+.gallery__item:hover {
     opacity: 1;
 
 }
@@ -1357,7 +1470,8 @@ ul li {
     font-size: 20px;
 }
 
-.rating__rate:hover::before, .rating__rate:hover ~ span:before {
+.rating__rate:hover::before,
+.rating__rate:hover~span:before {
     color: #ffa200;
     position: relative;
     z-index: 10;
@@ -1587,7 +1701,8 @@ select {
     color: #6c757d;
 }
 
-.btn--fav, .btn--compare {
+.btn--fav,
+.btn--compare {
     margin-left: 20px;
 }
 
@@ -1706,6 +1821,7 @@ select {
         opacity: 0;
         transform: rotateX(-90deg)
     }
+
     100% {
         opacity: 1;
         transform: rotateX(0deg)
@@ -1722,7 +1838,8 @@ select {
     line-height: 200%;
 }
 
-.tab__section--compare ul, .tab__section--compare ol {
+.tab__section--compare ul,
+.tab__section--compare ol {
     padding: 0 20px 0;
 }
 
@@ -1858,7 +1975,8 @@ select {
     font-size: 15px;
 }
 
-.comments__date, .btn--reply {
+.comments__date,
+.btn--reply {
     font-size: 12px;
 }
 
@@ -1967,7 +2085,8 @@ select {
     margin-top: 30px;
 }
 
-.cart__coupon, .cart__table {
+.cart__coupon,
+.cart__table {
     width: 100%;
     max-width: 50%;
     flex: 0 0 50%;
@@ -2008,7 +2127,8 @@ table {
     text-align: center;
 }
 
-table th, table td {
+table th,
+table td {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #f0f0f5;
@@ -2081,7 +2201,8 @@ table tbody tr:nth-child(2n+1) {
     color: #6c757d;
     margin-top: 15px;
 }
-.account__router{
+
+.account__router {
     color: #36b3fb;
 }
 </style>
