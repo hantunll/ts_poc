@@ -13,7 +13,7 @@
 
                         <div class="d-flex justify-content-between align-items-center">
                             <div v-on:click="clickHL">
-                                <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img"
+                                <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img style="cursor: pointer;height:27vh;width:30vh ;margin:auto;"
                                     style="cursor: pointer; " />
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                         <!-- <p class="card-text">優質優利信用貸款</p> -->
                         <div class="d-flex justify-content-between align-items-center">
                             <div v-on:click="clickCL">
-                                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img"
+                                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img style="cursor: pointer;height:27vh;width:30vh ;margin:auto;"
                                     style="cursor: pointer; " />
                             </div>
                         </div>
