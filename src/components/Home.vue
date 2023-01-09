@@ -10,9 +10,9 @@
                     <div class="card-body" style="font-family:serif;">
                         <!-- <p class="card-text">軍公教信用貸款</p> -->
 
-
+                        <div v-on:click="clickHL">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div v-on:click="clickHL">
+                            
                                <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img" style="cursor: pointer;height:27vh;width:30vh ;margin:auto;" />
                             </div>
                         </div>
@@ -63,6 +63,7 @@
                     <!-- <div class="card mb-4 box-shadow" style="background-color:white" > -->
                     <div class="card-body" style="font-family:serif;">
                         <!-- <p class="card-text">優質優利信用貸款</p> -->
+                        <div v-on:click="clickCL">
                         <div class="d-flex justify-content-between align-items-center">
                             <div v-on:click="clickCL">
                                 <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img" style="cursor: pointer;height:27vh;width:30vh ;margin:auto;" />
