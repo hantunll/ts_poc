@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@hantunll 
+hantunll
+/
+ts_poc
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+ts_poc/src/components/Home.vue
+
+Jackson TH Ko 0109
+Latest commit c704ce8 1 hour ago
+ History
+ 0 contributors
+2208 lines (1881 sloc)  40 KB
+
 
 
 <template>
@@ -13,7 +43,8 @@
 
                         <div class="d-flex justify-content-between align-items-center">
                             <div v-on:click="clickHL">
-                               <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img" style="cursor: pointer;height:27vh;width:30vh ;margin:auto;" />
+                                <img :src="require(`@/assets/img/slider/1.jpg`)" class="slideshow__img"
+                                    style="cursor: pointer; " />
                             </div>
                         </div>
                         <!-- </div> -->
@@ -65,7 +96,8 @@
                         <!-- <p class="card-text">優質優利信用貸款</p> -->
                         <div class="d-flex justify-content-between align-items-center">
                             <div v-on:click="clickCL">
-                                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img" style="cursor: pointer;height:27vh;width:30vh ;margin:auto;" />
+                                <img :src="require(`@/assets/img/slider/2.jpg`)" class="slideshow__img"
+                                    style="cursor: pointer; " />
                             </div>
                         </div>
                     </div>
@@ -118,8 +150,6 @@
 
 <script>
 import axios from 'axios';
-
-
 export default {
     data() {
         return {
@@ -140,11 +170,9 @@ export default {
             this.$router.push('/home/creditLoan');
             console.log(email);
         },
-
         clickHL: function () {
             this.$router.push('/home/houseLoan');
         },
-
     }
 }
 </script>
@@ -158,7 +186,6 @@ export default {
     /* border: 1px solid rgb(0, 255, 242); */
     background: #46b1ef;
     border-radius: 8px;
-
 }
 
 .picmain {
@@ -193,7 +220,6 @@ html {
 main {
     flex-grow: 1;
 }
-
 
 * {
     outline: 0;
@@ -297,7 +323,6 @@ ul li {
     width: 50px;
     height: 50px;
 }
-
 
 .navbar__ul {
     display: -ms-flexbox;
@@ -783,7 +808,6 @@ ul li {
     right: unset !important;
     left: 33px !important;
 }*/
-
 .swiper-button-prev {
     left: unset !important;
     right: 30px !important;
@@ -1374,7 +1398,6 @@ ul li {
     top: 50%;
     transform: translateY(-50%);
     user-select: none;
-
 }
 
 .gallery__prev {
@@ -1413,7 +1436,6 @@ ul li {
 .gallery__item--is-acitve,
 .gallery__item:hover {
     opacity: 1;
-
 }
 
 .show__gallery {
@@ -1596,7 +1618,6 @@ select {
 /*    color: #000;*/
 /*    background: #f6f6f6;*/
 /*}*/
-
 .dropdown-select--selected {
     color: #fff;
     background: #36b3fb;
@@ -2130,7 +2151,6 @@ table td {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #f0f0f5;
-
 }
 
 table tbody tr:nth-child(2n+1) {
