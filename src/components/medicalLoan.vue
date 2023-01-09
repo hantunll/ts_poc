@@ -194,16 +194,6 @@
       </div>
     </div>
 
-    <!-- <div class="two_button">
-      <router-link to="/home/creditLoan">
-        <button type="button" class="btn btn-outline-success">返回</button>
-      </router-link>
-      <button type="button" class="btn btn-outline-success">服務據點</button>
-
-      <button type="button" class="btn btn-success" v-on:click="click"> 立即申請</button>
-
-    </div> -->
-
     <div class="two_button">
       <router-link to="/home/creditLoan">
         <button type="button" class="btn btn-outline-success">返回</button>
@@ -300,6 +290,9 @@ export default {
           console.log(res.data);
           console.log("click home loan success");
         })
+        .catch(error => {
+          console.log(error.response);
+        });
     },
   },
 }

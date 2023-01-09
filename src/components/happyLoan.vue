@@ -16,6 +16,11 @@
         <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse1"
           aria-expanded="false" aria-controls="oldCollapse1" v-on:click="click">
           貸款對象
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </div>
       </div>
       <div class="collapse content" id="oldCollapse1">
@@ -30,6 +35,11 @@
         <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse2"
           aria-expanded="false" aria-controls="oldCollapse2" v-on:click="click">
           貸款額度
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </div>
       </div>
       <div class="collapse content" id="oldCollapse2">
@@ -44,6 +54,11 @@
         <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse3"
           aria-expanded="false" aria-controls="oldCollapse3" v-on:click="click">
           貸款利率
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </div>
       </div>
       <div class="collapse content" id="oldCollapse3">
@@ -62,6 +77,11 @@
         <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse4"
           aria-expanded="false" aria-controls="oldCollapse4" v-on:click="click">
           貸款期限
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </div>
       </div>
       <div class="collapse content" id="oldCollapse4">
@@ -76,6 +96,11 @@
         <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse11"
           aria-expanded="false" aria-controls="oldCollapse11" v-on:click="click">
           撥款方式
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </div>
       </div>
       <div class="collapse content" id="oldCollapse11">
@@ -90,6 +115,11 @@
         <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse5"
           aria-expanded="false" aria-controls="oldCollapse5" v-on:click="click">
           擔保品
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </div>
       </div>
       <div class="collapse content" id="oldCollapse5">
@@ -104,6 +134,11 @@
         <div class="subtitle" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse6"
           aria-expanded="false" aria-controls="oldCollapse6" v-on:click="click">
           常見問題
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </div>
       </div>
       <div class="collapse content" id="oldCollapse6">
@@ -111,6 +146,11 @@
           <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse7"
             aria-expanded="false" aria-controls="oldCollapse7" v-on:click="click">
             Q 向貴行申請貸款，應準備那些基本文件？
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
           </button>
         <ol class="collapse content" id="oldCollapse7">
 
@@ -127,6 +167,11 @@
           <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse8"
             aria-expanded="false" aria-controls="oldCollapse8" v-on:click="click">
             Q 請問對保時需要攜帶那些資料？
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
           </button>
         <ul class="collapse content" id="oldCollapse8">
 
@@ -139,6 +184,11 @@
           <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse9"
             aria-expanded="false" aria-controls="oldCollapse9" v-on:click="click">
             Q 向貴行申請貸款需要提供保證人擔保嗎？
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
           </button>
         <ul class="collapse content" id="oldCollapse9">
 
@@ -151,6 +201,11 @@
           <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#oldCollapse10"
             aria-expanded="false" aria-controls="oldCollapse10" v-on:click="click">
             Q 什麼是貸款指標利率？
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
           </button>
         <ul class="collapse content" id="oldCollapse10">
 
@@ -251,6 +306,9 @@ export default {
           console.log(res.data);
           console.log("click home loan success");
         })
+        .catch(error => {
+          console.log(error.response);
+        });
     },
   },
 }
